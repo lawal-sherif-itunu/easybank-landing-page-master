@@ -30,13 +30,20 @@
   z-index: 9999999;
 }
 
-.mockup-mobile {
-  width: 90%;
+.mockup {
+  position: relative;
+  width: 100%;
+  top: -5rem;
+}
+
+.intro-mobile {
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   margin-inline: auto;
   display: block;
+  z-index: -1;
 }
 
 main {
@@ -57,7 +64,9 @@ h1 {
   color: hsl(233, 26%, 24%);
 }
 
-p {
+p,
+h6,
+h4 {
   color: hsl(233, 8%, 62%);
   line-height: 1.5rem;
 }
@@ -116,12 +125,29 @@ h3 {
   width: 100%;
 }
 
+.page-3 h6,
+.page-3 h4,
+.page-3 p {
+  text-align: left;
+}
+
 .claire,
 .wilson,
 .hutton,
 .robinson {
   border-radius: 0 0 1rem 1rem;
   margin-bottom: 2rem;
+}
+
+.claire-description,
+.wilson-description,
+.hutton-description,
+.obinson-description {
+  padding: 2rem;
+  color: rgb(243, 244, 246);
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(243, 244, 246, 0.2),
+    0 1px 3px 0 rgba(0, 0, 0, 0.19);
 }
 
 .claire img,
@@ -134,4 +160,8 @@ h3 {
 .article {
   padding: 2rem;
   text-align: left;
+}
+
+.page-3 h2 {
+  margin: 2rem;
 }
