@@ -1,3 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Public Sans", serif;
+}
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.header-desktop,
+.mobile-nav-links,
+.mobile-close-bar,
+.desktop-bg-into {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.header-mobile {
+  padding: 2rem;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 9999999;
+}
+
+.mockup-mobile {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-inline: auto;
+  display: block;
+}
+
+main {
+  width: 100%;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.main-details {
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+  color: hsl(233, 26%, 24%);
+}
+
+p {
+  color: hsl(233, 8%, 62%);
+  line-height: 1.5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 2.5rem;
+  color: #fff;
+  border: none;
+  margin-top: 2rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 65%, 51%),
+    hsl(192, 70%, 51%)
+  );
+}
+
+.page-2 {
+  margin-top: 5rem;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 98%);
+  width: 100%;
+  padding-block: 4rem;
+}
+
+.page-2 h2 {
+  margin-bottom: 1.5rem;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+
+.online-banking,
+.simple-budgeting,
+.fast-onboarding,
+.open-api,
+.online-banking img,
+.simple-budgeting img,
+.fast-onboarding img,
+.open-api img,
+.online-banking h3,
+.simple-budgeting h3,
+.fast-onboarding h3,
+.open-api h3 {
+  margin-block: 1.5rem;
+}
+
+.page-3 {
+  padding: 2rem;
+}
+
+.page-3 img {
+  width: 100%;
+}
+
+.claire,
+.wilson,
+.hutton,
+.robinson {
+  border-radius: 0 0 1rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.claire img,
+.wilson img,
+.hutton img,
+.robinson img {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.article {
+  padding: 2rem;
+  text-align: left;
+}

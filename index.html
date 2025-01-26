@@ -9,11 +9,30 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
-    <div class="header">
+    <div class="header-mobile">
+      <img src="images/logo.svg" alt="" />
+      <img class="mobile-nav-bar" src="images/icon-hamburger.svg" alt="" />
+      <img class="mobile-close-bar" src="images/icon-close.svg" alt="">
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#" class="nav">Home</a>
+      <a href="#" class="nav">About</a>
+      <a href="#" class="nav">Contact</a>
+      <a href="#" class="nav">Blog</a>
+      <a href="#" class="nav">Careers</a>
+    </div>
+    <div class="background-fade"></div>
+    <img src="images/bg-intro-mobile.svg" alt="">
+    <img class="mockup-mobile" src="images/image-mockups.png" alt="" />
+    <div class="break"></div>
+    <div class="header-desktop">
       <img src="images/logo.svg" alt="" />
       <div class="nav">
         <a href="#" class="nav">Home</a>
@@ -36,7 +55,7 @@
         <button class="request-invite">Request Invite</button>
       </div>
 
-      <img src="images/bg-intro-desktop.svg" alt="" />
+      <img class="desktop-bg-into" src="images/bg-intro-desktop.svg" alt="" />
 
       <div class="page-2">
         <h2>Why choose Easybank?</h2>
@@ -86,16 +105,18 @@
         <div class="claire">
           <img src="images/image-currency.jpg" alt="" />
           <div class="claire-description">
-            <h6>By Claire Robinson</h6>
-            <h4>Receive money in any currency with no fees</h4>
-            <p>
-              The world is getting smaller and we’re becoming more mobile. So
-              why should you be forced to only receive money in a single …
-            </p>
+            <div class="article">
+              <h6>By Claire Robinson</h6>
+              <h4>Receive money in any currency with no fees</h4>
+              <p>
+                The world is getting smaller and we’re becoming more mobile. So
+                why should you be forced to only receive money in a single …
+              </p>
+            </div>
           </div>
         </div>
         <div class="wilson">
-          <img src="images/image-mockups.png" alt="" />
+          <img src="images/image-restaurant.jpg" alt="">
           <div class="wilson-description">
             <h6>By Wilson Hutton</h6>
             <h4>Treat yourself without worrying about money</h4>
@@ -116,7 +137,7 @@
             </p>
           </div>
         </div>
-        <div class="Robinson">
+        <div class="robinson">
           <img src="images/image-confetti.jpg" alt="" />
           <div class="Robinson-description">
             <h6>By Claire Robinson</h6>
