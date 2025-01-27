@@ -462,4 +462,9 @@ button:hover {
   .desktop-mockup {
     display: block;
   }
+
+  .footer-logo {
+    display: grid;
+    align-content: space-between;
+  }
 }
