@@ -155,7 +155,7 @@ h3 {
 }
 
 .article {
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: left;
 }
 
@@ -175,6 +175,10 @@ footer {
   gap: 1rem;
   justify-content: center;
   margin-block-start: 2rem;
+}
+
+button {
+  cursor: pointer;
 }
 
 .footer-logo-img {
@@ -231,6 +235,10 @@ footer {
   /* display: block; */
 }
 
+.desktop-mockup {
+  display: none;
+}
+
 .mobile-nav-links {
   position: absolute;
   width: 90%;
@@ -279,6 +287,21 @@ footer {
   margin: 0;
 }
 
+.footer-internal-links a:hover,
+.socials a:hover {
+  color: hsl(136, 65%, 51%);
+  /* background-color: red; */
+  fill: hsl(136, 65%, 51%);
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(136, 74%, 83%),
+    hsl(192, 71%, 77%)
+  );
+}
+
 @media screen and (min-width: 1006px) {
   .header-mobile {
     display: none;
@@ -288,6 +311,10 @@ footer {
     display: block;
     display: flex;
     padding: 1rem;
+  }
+
+  .header-desktop {
+    padding-inline: 3rem;
   }
 
   .header-desktop .nav {
@@ -309,12 +336,19 @@ footer {
   .desktop-front-page {
     display: grid;
     grid-auto-flow: column;
-    align-content: center;
-    height: 90vh;
+    grid-template-columns: 2fr 3fr;
+    /* align-content: center; */
+    height: 100vh;
   }
 
   .desktop-bg-into {
     display: block;
+  }
+
+  .desktop-open-bg {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
   }
 
   .intro-mobile,
@@ -325,25 +359,107 @@ footer {
   .desktop-bg-into {
     position: absolute;
     overflow: hidden;
-    right: -60%;
-    top: -12rem;
+    right: -40%;
+    top: -8rem;
     z-index: -1;
+    height: 70%;
   }
 
   .desktop-mockup {
     position: absolute;
     height: 80vh;
-    right: -6rem;
+    right: -4rem;
+    top: -3.5rem;
   }
 
   .main-details {
     text-align: left;
-    padding: 4rem;
+    /* padding: 4rem; */
     width: 30rem;
+    display: grid;
+    align-content: center;
   }
 
   .main-details h1 {
     text-align: left;
     /* line-height: 2rem; */
+  }
+
+  .page-2 {
+    text-align: left;
+  }
+
+  .page-2-sections {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .easybank {
+    width: 60%;
+    margin-block: 2rem;
+  }
+
+  .page-3 {
+    text-align: left;
+  }
+
+  .page-3 h2 {
+    margin: 0;
+  }
+
+  .latest-article-divs {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .page-3 h2 {
+    margin-block: 2rem;
+  }
+
+  .claire-description,
+  .wilson-description,
+  .hutton-description,
+  .robinson-description {
+    padding: 0.7rem;
+    border-radius: 0 0 0.4rem 0.4rem;
+    height: 60%;
+  }
+
+  .claire img,
+  .wilson img,
+  .hutton img,
+  .robinson img {
+    border-radius: 0.4rem 0.4rem 0 0;
+    height: 40%;
+  }
+
+  footer {
+    text-align: left;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .footer-internal-links {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin-left: 2rem;
+  }
+
+  .footer-internal-links a {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .desktop-mockup {
+    display: block;
   }
 }
