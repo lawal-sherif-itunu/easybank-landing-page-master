@@ -6,6 +6,10 @@
   border: none;
 }
 
+body {
+  position: relative;
+}
+
 .header-desktop,
 .mobile-nav-links,
 .mobile-close-bar,
@@ -13,7 +17,8 @@
   display: none;
 }
 
-.header-mobile {
+.header-mobile,
+.header-desktop {
   padding: 2rem;
   position: fixed;
   background-color: #fff;
@@ -22,7 +27,6 @@
   justify-content: space-between;
   z-index: 9999999;
 }
-
 .mockup {
   position: relative;
   width: 100%;
@@ -223,6 +227,8 @@ footer {
   position: fixed;
   z-index: 2;
   opacity: 0.5;
+  display: none;
+  /* display: block; */
 }
 
 .mobile-nav-links {
@@ -230,12 +236,19 @@ footer {
   width: 90%;
   padding: 2rem;
   border-radius: 0.5rem;
-  display: block;
+  /* display: block; */
   z-index: 300;
   background-color: hsl(0, 0%, 98%);
   top: 7rem;
   position: fixed;
+  margin-inline: auto;
+  left: 0;
+  right: 0;
 }
+
+/* .mobile-nav-bar {
+  display: none;
+} */
 
 .mobile-nav-links a {
   text-decoration: none;
@@ -244,4 +257,93 @@ footer {
   margin: 2rem;
   text-align: center;
   font-weight: 700;
+}
+
+.header-desktop {
+  padding: 0;
+  display: none;
+}
+
+.header-desktop button {
+  margin: 0;
+}
+
+.header-desktop a {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+}
+
+.header-desktop img,
+.header-desktop a,
+.header-desktop button {
+  margin: 0;
+}
+
+@media screen and (min-width: 1006px) {
+  .header-mobile {
+    display: none;
+  }
+
+  .header-desktop {
+    display: block;
+    display: flex;
+    padding: 1rem;
+  }
+
+  .header-desktop .nav {
+    display: flex;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+  }
+
+  .header-desktop a {
+    margin-inline: 1rem;
+  }
+
+  .header-desktop a:hover {
+    padding-bottom: 1rem;
+    border-bottom: solid hsl(136, 65%, 51%) 3px;
+  }
+
+  .desktop-front-page {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    height: 90vh;
+  }
+
+  .desktop-bg-into {
+    display: block;
+  }
+
+  .intro-mobile,
+  .mockup {
+    display: none;
+  }
+
+  .desktop-bg-into {
+    position: absolute;
+    overflow: hidden;
+    right: -60%;
+    top: -12rem;
+    z-index: -1;
+  }
+
+  .desktop-mockup {
+    position: absolute;
+    height: 80vh;
+    right: -6rem;
+  }
+
+  .main-details {
+    text-align: left;
+    padding: 4rem;
+    width: 30rem;
+  }
+
+  .main-details h1 {
+    text-align: left;
+    /* line-height: 2rem; */
+  }
 }

@@ -9,17 +9,24 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
     <div class="header-mobile">
       <img src="images/logo.svg" alt="" />
-      <img class="mobile-nav-bar" src="images/icon-hamburger.svg" alt="" />
-      <img class="mobile-close-bar" src="images/icon-close.svg" alt="">
+      <div class="mobile-nav-bar">
+        <img src="images/icon-hamburger.svg" alt="" />
+      </div>
+      <div class="mobile-close-bar">
+        <img src="images/icon-close.svg" alt="" />
+      </div>
     </div>
     <div class="mobile-nav-links">
       <a href="#" class="nav">Home</a>
@@ -28,10 +35,6 @@
       <a href="#" class="nav">Blog</a>
       <a href="#" class="nav">Careers</a>
     </div>
-    <div class="background-fade"></div>
-    <img class="intro-mobile" src="images/bg-intro-mobile.svg" alt="">
-    <img class="mockup" src="images/image-mockups.png" alt="" />
-    <div class="break"></div>
     <div class="header-desktop">
       <img src="images/logo.svg" alt="" />
       <div class="nav">
@@ -43,19 +46,26 @@
       </div>
       <button class="request-invite">Request Invite</button>
     </div>
+    <div class="background-fade"></div>
+    <img class="intro-mobile" src="images/bg-intro-mobile.svg" alt="" />
+    <img class="mockup" src="images/image-mockups.png" alt="" />
+    <div class="break"></div>
 
     <main>
-      <div class="main-details">
-        <h1>Next generation digital banking</h1>
-        <p>
-          Take your financial life online. Your Easybank account will be a
-          one-stop-shop for spending, saving, budgeting, investing, and much
-          more.
-        </p>
-        <button class="request-invite">Request Invite</button>
-      </div>
+      <div class="desktop-front-page">
+        <div class="main-details">
+          <h1>Next generation digital banking</h1>
+          <p>
+            Take your financial life online. Your Easybank account will be a
+            one-stop-shop for spending, saving, budgeting, investing, and much
+            more.
+          </p>
+          <button class="request-invite">Request Invite</button>
+        </div>
 
-      <img class="desktop-bg-into" src="images/bg-intro-desktop.svg" alt="" />
+        <img class="desktop-bg-into" src="images/bg-intro-desktop.svg" alt="" />
+        <img class="desktop-mockup" src="images/image-mockups.png" alt="" />
+      </div>
 
       <div class="page-2">
         <h2>Why choose Easybank?</h2>
@@ -116,7 +126,7 @@
           </div>
         </div>
         <div class="wilson">
-          <img src="images/image-restaurant.jpg" alt="">
+          <img src="images/image-restaurant.jpg" alt="" />
           <div class="wilson-description">
             <h6>By Wilson Hutton</h6>
             <h4>Treat yourself without worrying about money</h4>
@@ -183,5 +193,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://x.com/thesheriflawal">Lawal Sherif</a>.
     </div>
+
+    <script src="sandbox.js"></script>
   </body>
 </html>
